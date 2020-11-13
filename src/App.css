@@ -1,0 +1,93 @@
+header {
+  background-color: #252525d2;
+  color: #fff;
+  padding: 1rem;
+}
+
+main {
+  width: 95%;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.main__form {
+  flex: 4;
+}
+
+.main__summary {
+  flex: 3;
+  margin-left: 0.2rem;
+}
+
+.summary__option {
+  display: grid;
+  grid-template-areas:
+    "key cost"
+    "value value";
+  padding: 0.2rem;
+  margin-top: 1rem;
+}
+
+.summary__option__label {
+  font-size: 20px;
+  font-weight: bold;
+  grid-area: key;
+}
+
+.summary__option__value {
+  grid-area: value;
+}
+
+.summary__option__cost {
+  grid-area: cost;
+  text-align: right;
+}
+
+.summary__total {
+  font-size: 2.2rem;
+  line-height: 2.4;
+  display: flex;
+  margin-top: 1.5rem;
+  border-top: solid 1px #252525;
+}
+
+.summary__total__label {
+  font-weight: bold;
+  flex: 2;
+}
+
+.summary__total__value {
+  text-decoration: underline;
+}
+
+.feature__name {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: bold;
+}
+
+.feature__list {
+  list-style: none;
+}
+
+.feature__option:not(.feature__selected) {
+  cursor: pointer;
+}
+
+.feature__option {
+  margin-top: 4px;
+  padding: 2px;
+}
+
+.feature__selected {
+  background: #dedede;
+}
+
+.feature__item {
+  display: block;
+  padding: 0.8rem;
+  border: 0.1rem solid #d6d6d6;
+  border-radius: 0.4rem;
+}
